@@ -9,6 +9,6 @@ for _ in range(a):
     d.append(str(c.pop(b)))
     for _ in range(b1):
         b += 1
-    if b >= len(c):
-        b -= len(c)
+        if b >= len(c):
+            b -= len(c)
 print('<'+', '.join(d)+'>')
