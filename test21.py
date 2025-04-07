@@ -1,11 +1,9 @@
-class Number:
-    a: int
-    def __mul__(self, obj):
-        return self.a * obj.a
-    def __init__(self, b):
-        self.a = b
-
-a = Number(1)
-b = Number(2)
-
-print(a*b)
+a = int(input())
+b = input()
+c = []
+for i in range(0,a):
+    c.append(ord(b[i])-96)
+hash_num = 0
+for i in range(0,a):
+    hash_num += c[i] * 31 ** i
+print(hash_num % 1234567891)
